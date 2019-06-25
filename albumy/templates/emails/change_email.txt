@@ -1,0 +1,7 @@
+你好 {{ user.username }},
+
+请访问下面的链接，以验证您的新电子邮件地址：
+
+    {{ url_for('user.change_email', token=token, _external=True) }}
+
+(请不要回复此通知)
